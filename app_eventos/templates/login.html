@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Iniciar Sesión{% endblock %}
+
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <h3>Iniciar Sesión</h3>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label>Usuario</label>
+                <input type="text" name="usuario" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label>Contraseña</label>
+                <input type="password" name="contraseña" class="form-control">
+            </div>
+
+            <button class="btn btn-primary w-100">Entrar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

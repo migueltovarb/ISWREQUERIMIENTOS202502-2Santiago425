@@ -1,0 +1,134 @@
+\documentclass{article}
+
+% Configuración de idioma y márgenes
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm]{geometry}
+
+% Paquetes útiles
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+
+% Información del documento
+\title{Aceleración por Propulsión Química: Cohete Casero con Bicarbonato y Vinagre}
+\author{
+  Santiago Alejandro Campoverde Obando\\
+  Felipe Alejandro Cerón Cifuentes\\
+  Manuel Alejandro Villarreal Gil\\[1em]
+  \small Universidad Cooperativa de Colombia - Sede Pasto\\
+  \small Materia: Física Mecánica - Ingeniería de Software, Semestre 2\\
+  \small Profesor: Pedro Javier Tarapues
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este informe describe la construcción y análisis experimental de un cohete propulsado químicamente utilizando vinagre y bicarbonato de sodio como reactivos principales. Se demuestra el principio de acción y reacción según la tercera ley de Newton y se mide la aceleración y altura alcanzada por un cohete de reacción simple. Se discuten aspectos teóricos, metodológicos, resultados experimentales, análisis de errores y consideraciones de seguridad para la ejecución del experimento.
+\end{abstract}
+
+\section{Introducción}
+El fenómeno de propulsión química basado en reacciones ácido-base es un método efectivo para demostrar principios fundamentales de la física, tales como la ley de acción y reacción de Newton. En este experimento se utiliza la reacción entre vinagre (ácido acético diluido) y bicarbonato de sodio para generar gas dióxido de carbono (CO$_2$), que al acumular presión impulsa un cohete casero fabricado con una botella PET. Este proyecto busca comprender la dinámica de la aceleración producida por el empuje generado, analizar su comportamiento experimental y discutir las limitaciones del modelo simplificado frente a motores reales.
+
+\section{Objetivos}
+\begin{itemize}
+    \item Demostrar el principio de acción y reacción mediante un cohete propulsado por reacción química.
+    \item Medir la aceleración y la altura máxima alcanzada por el cohete.
+    \item Analizar el efecto de la cantidad de reactivos en la performance del sistema.
+    \item Fomentar el uso seguro de materiales y métodos en experimentos científicos.
+\end{itemize}
+
+\section{Marco Teórico}
+La reacción química entre el ácido acético del vinagre y el bicarbonato de sodio produce dióxido de carbono según la ecuación:
+
+\[
+\mathrm{CH_3COOH + NaHCO_3 \rightarrow CH_3COONa + CO_2 + H_2O}
+\]
+
+El gas CO$_2$ formado genera una presión creciente dentro del recipiente (botella PET), acumulando energía que se libera al expulsarse por la boquilla, alcanzando un efecto similar a un motor a propulsión. El principio de acción y reacción establece que la fuerza de expulsión del gas hacia atrás genera un empuje hacia adelante en el cohete.
+
+\section{Materiales y Métodos}
+\begin{itemize}
+    \item Botella PET (500 ml - 1 L)
+    \item Tapón con agujero y boquilla adaptada (corcho y pipeta)
+    \item Vinagre (ácido acético diluido)
+    \item Bicarbonato de sodio
+    \item Papel para sobrecito retardante
+    \item Embudo pequeño
+    \item Soporte de lanzamiento (rampa o plataforma vertical)
+    \item Equipo de protección personal: gafas y guantes
+    \item Cronómetro o cámara para registro temporal y de altura
+    \item Escala visual para medición de altura (poste marcado, regla, etc.)
+\end{itemize}
+
+\subsection{Construcción del cohete y montaje experimental}
+El cuerpo principal del cohete está conformado por una botella PET. La boquilla se adapta al tapón mediante un corcho con un orificio que permite la expulsión controlada del gas. El bicarbonato se introduce en un sobre de papel que retarda la mezcla con el vinagre, facilitando su manipulación y evitando una reacción inmediata al preparar el cohete. El sistema se monta en una plataforma que mantiene el cohete en posición vertical para el lanzamiento.
+
+\subsection{Procedimiento Experimental}
+\begin{enumerate}
+    \item Preparar varios paquetes de bicarbonato en papel para controlar la liberación durante el experimento.
+    \item Medir y verter una cantidad específica de vinagre dentro de la botella (por ejemplo, entre 100 y 200 ml).
+    \item Introducir el sobre de bicarbonato en el cuello de la botella y rápidamente colocar el tapón adaptado.
+    \item Colocar el cohete en la plataforma, posición con boquilla hacia abajo para lanzamiento vertical.
+    \item Activar la reacción al permitir que el bicarbonato caiga dentro del vinagre, liberar el cohete y registrar el tiempo de despegue y la altura máxima alcanzada mediante métodos visuales o video.
+    \item Repetir el experimento variando las cantidades de reactivos para analizar el efecto sobre la altura y aceleración.
+\end{enumerate}
+
+\section{Resultados}
+Los datos obtenidos se presentan en tablas y gráficos que muestran la relación entre las cantidades de vinagre y bicarbonato y la altura máxima alcanzada.
+
+\begin{table}[H]
+\centering
+\caption{Datos experimentales de altura alcanzada según cantidades de reactivos}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+Cantidad Bicarbonato (g) & Volumen Vinagre (ml) & Altura máxima (m) \\ \midrule
+5                      & 100                   & 1.2               \\ 
+7                      & 150                   & 1.6               \\ 
+9                      & 200                   & 2.1               \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{image.jpg}
+\caption{Imagen del cohete antes del lanzamiento.}
+\label{fig:lanzamiento}
+\end{figure}
+
+\section{Análisis y Discusión}
+La tendencia observada indica que un mayor volumen de reactivos incrementa la presión y, por ende, la altura alcanzada por el cohete. Se discuten las posibles fuentes de error como fugas en el tapón, mediciones imprecisas y condiciones ambientales. Se destaca cómo el modelo simplificado no considera pérdidas térmicas ni resistencia aerodinámica completa, aspectos relevantes en motores reales.
+
+\section{Conclusiones}
+El experimento cumple con el objetivo de mostrar la ley de acción y reacción a través de un sistema propulsado químicamente. Los resultados evidencian una relación directa entre la cantidad de reactivos y el rendimiento en altura y aceleración del cohete.
+
+\section{Recomendaciones de Seguridad}
+\begin{itemize}
+    \item Realizar el experimento en espacio abierto.
+    \item Mantener distancia segura durante lanzamiento.
+    \item Usar gafas y guantes de protección personal.
+    \item No usar cantidades excesivas de reactivos.
+    \item Contar con un extintor en caso de emergencia.
+\end{itemize}
+
+\section{Referencias}
+\begin{thebibliography}{9}
+
+\bibitem{latexcompanion}   
+Overleaf, \textit{Learn LaTeX in 30 minutes}, \url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes}
+
+\bibitem{fisicaproyecto}  
+Material de curso Física Mecánica, Universidad Cooperativa de Colombia, 2025
+
+\bibitem{reaccionquimica}  
+J. Serra, \textit{Reacciones ácido-base y propulsión química}, Canal Jorge Serra, 2014.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2>Editar Participante</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="{{ participante.nombre }}" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ participante.email }}" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Teléfono:</label>
+        <input type="text" name="telefono" value="{{ participante.telefono }}" class="form-control" required>
+    </div>
+
+    <button class="btn btn-primary">Actualizar</button>
+</form>
+
+{% endblock %}
