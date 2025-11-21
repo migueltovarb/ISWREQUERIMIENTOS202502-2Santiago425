@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2>Notificaciones</h2>
+
+<ul class="list-group mt-3">
+    {% for n in notificaciones %}
+        <li class="list-group-item">
+            {{ n.mensaje }} — <small>{{ n.fecha }}</small>
+        </li>
+    {% empty %}
+        <li class="list-group-item">No tienes notificaciones</li>
+    {% endfor %}
+</ul>
+{% endblock %}

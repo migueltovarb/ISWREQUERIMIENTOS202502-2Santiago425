@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2>Registros de Asistencia</h2>
+
+<a href="{% url 'registros_crear' %}" class="btn btn-success mb-3">Registrar Asistencia</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Participante</th>
+            <th>Evento</th>
+            <th>Fecha Registro</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in registros %}
+        <tr>
+            <td>{{ r.participante.nombre }}</td>
+            <td>{{ r.evento.titulo }}</td>
+            <td>{{ r.fecha_registro }}</td>
+            <td>
+                <a href="{% url 'registros_eliminar' r.id %}" class="btn btn-danger btn-sm">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

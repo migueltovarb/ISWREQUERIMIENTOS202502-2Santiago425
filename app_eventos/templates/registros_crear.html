@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2>Registrar Asistencia</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label>Evento:</label>
+        <select name="evento" class="form-control">
+            {% for e in eventos %}
+            <option value="{{ e.id }}">{{ e.titulo }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Participante:</label>
+        <select name="participante" class="form-control">
+            {% for p in participantes %}
+            <option value="{{ p.id }}">{{ p.nombre }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button class="btn btn-primary">Registrar</button>
+</form>
+
+{% endblock %}
